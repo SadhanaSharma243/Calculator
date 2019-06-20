@@ -29,6 +29,9 @@
                      <option value="-">-</option>
                      <option value="*">*</option>
                      <option value="/">/</option>
+		     <option value="sqrt">sqrt</option>
+	             <option value="^">^</option>
+		     <option value="!">!</option>
                   </select>
                </td>
             </tr>
@@ -61,7 +64,19 @@
 		             
 		         } else if (operator.equals("/")) {
 		             out.println(num1 / num2);
-		         }
+		         } else if (operator.equals("sqrt"){
+	                     math.sqrt(num1);
+			     
+			 } else if (operator.equals("!")) {
+			     if (num1 <= 1){
+		               return 1;
+			     } else {
+				return num1 * fact(num1-1);
+			     }
+			 
+			 } else if (operartor.equals("^"){
+			     math.pow(num1,num2)
+			    }
 		     }
 		 } catch (Exception ex) {
 		     out.println("Syntax Err");
